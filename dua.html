@@ -7,7 +7,8 @@
   <title>SmartEng</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <style>
     body {
@@ -77,39 +78,39 @@
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
 }
 
+.polite-section {
+  background: linear-gradient(to bottom, #f9f3ff, #e7d9f8);
+  font-family: 'Poppins', sans-serif;
+}
 
-    #materi {
-      font-family: 'Poppins', sans-serif;
-      background-color: #ffbaff;
-      color: #333;
-      margin: 0;
-      padding: 0 10px;
-    }
-    h1, h2, h3 {
-      text-align: center;
-    }
-    .section {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 30px 0;
-      text-align: justify;
-    }
-    .cards {
-      max-width: 900px;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 20px;
-      padding: 40px 0;
-      margin: 0 auto;
-  
-    }
-    .card {
-      background-color: #ffffff;
-      padding: 20px;
-      border-left: 8px solid #7b68ee;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
+.polite-box, .casual-box {
+  transition: 0.3s;
+}
+
+.polite-box:hover, .casual-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+ .circle-card {
+  width: 300px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: rgb(255, 232, 243);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  margin: 0 auto;
+  border: 3px solid #ff008c;
+
+}
+
+  .rounded-card:hover {
+    transform: scale(1.02);
+  }
 
     #latihan {
       font-family: 'Poppins', sans-serif;
@@ -123,7 +124,7 @@
       max-width: 1000px;
       margin: 0 auto;
       padding: 30px 0;
-      text-align: justify;
+      text-align: center;
 
     }
     .quiz-box {
@@ -180,7 +181,8 @@
       border-radius: 5px;
       cursor: pointer;
     }
-    .footer-simple {
+
+      .footer-simple {
   background-color: #fff0e6;
   padding: 1.5rem 0;
   font-size: 0.9rem;
@@ -244,50 +246,78 @@
   <div class="overlay">
     <div class="container text-center">
       <h1 class="banner-title">
-        🗣 Common Daily Expressions
+        😎 Polite vs Casual English
       </h1>
-      <p class="banner-subtitle">Everyday expressions you often encounter!</p>
+      <p class="banner-subtitle">Learn the difference between polite and casual English conversation!</p>
     </div>
   </div>
 </header>
 
-<section id="materi">
-  <div class="section">
+    <section class="py-5" style="background-color: #ffbaff;">
+  <div class="container">
+
+    <!-- Penjelasan Lebih Panjang -->
     <p class="text-justify mb-4 fs-5">
-      In everyday life, native English speakers often use expressions that sound casual and are not always taught in schools. These expressions usually appear in conversations, movies, songs, or social media. Interestingly, their meanings can't always be guessed from the individual words. So, it's important to understand their real meaning and usage. Mastering them will make your English sound more natural and confident.
+      Dalam belajar bahasa Inggris, penting untuk tahu kapan harus pakai gaya bahasa yang sopan (polite) dan kapan bisa santai (casual).
+      Gaya sopan sering dipakai saat ngobrol sama orang yang lebih tua, dosen, guru, atau orang yang belum terlalu akrab.
+      Sedangkan gaya casual biasanya dipakai ke teman sebaya, orang dekat, atau dalam suasana nonformal.
+      Kalau kamu bisa bedakan dua gaya ini, kamu bakal lebih mudah beradaptasi di situasi apa pun—baik di sekolah, tempat kerja, maupun lingkungan sosial.
     </p>
 
-    <div class="cards">
-      <div class="card">
-        <h3>1. What's up?</h3>
-        <p><strong>Meaning:</strong> A casual way to say “How are you?”</p>
-        <p><strong>Example:</strong> "What’s up, John?" - "Not much, just chilling."</p>
-      </div>
-      <div class="card">
-        <h3>2. Long time no see!</h3>
-        <p><strong>Meaning:</strong> Used when you meet someone again after a long time.</p>
-        <p><strong>Example:</strong> "Hey, long time no see!" - "Yeah! It’s been like two years!"</p>
-      </div>
-      <div class="card">
-        <h3>3. I'm starving</h3>
-        <p><strong>Meaning:</strong> I'm very hungry.</p>
-        <p><strong>Example:</strong> "Let’s grab some food. I’m starving!"</p>
-      </div>
-      <div class="card">
-        <h3>4. No worries</h3>
-        <p><strong>Meaning:</strong> It's okay / No problem.</p>
-        <p><strong>Example:</strong> "Sorry for being late." - "No worries!"</p>
-      </div>
-      <div class="card">
-        <h3>5. You bet!</h3>
-        <p><strong>Meaning:</strong> Of course / Definitely!</p>
-        <p><strong>Example:</strong> "Will you come to the party tonight?" - "You bet!"</p>
-      </div>
+    <!-- Perbandingan Side-by-Side (Rounded Box) -->
+<div class="row text-center mb-5">
+  <div class="col-md-6 mb-3">
+    <div class="circle-card h-100">
+      <h5 class="text-success fw-semibold">Polite</h5>
+      <p>Could you help me, please?</p>
+      <p>I would like to ask...</p>
+      <p>Excuse me...</p>
+      <p>Would you mind if...?</p>
     </div>
-    </section>
+  </div>
+  <div class="col-md-6 mb-3">
+    <div class="circle-card h-100">
+      <h5 class="text-warning fw-semibold">Casual</h5>
+      <p>Can you help me?</p>
+      <p>I wanna ask...</p>
+      <p>Hey...</p>
+      <p>Is it okay if...?</p>
+    </div>
+  </div>
+</div>
+
+ <!-- Dialog Dua Versi -->
+<div class="bg-light p-4 rounded-4 shadow mb-4">
+  <h5 class="fw-bold">🎭 Contoh Dialog</h5>
+  <p><strong>Polite:</strong></p>
+  <p>
+    A: “<em>Excuse me, could you show me the way to the library?</em>”<br>
+    B: “<em>Sure! Just go straight, then turn left at the corner.</em>”<br>
+    A: “<em>Thank you so much. I really appreciate it.</em>”<br>
+    B: “<em>You’re welcome!</em>”
+  </p>
+
+  <p class="mt-4"><strong>Casual:</strong></p>
+  <p>
+    A: “<em>Hey, where’s the library?</em>”<br>
+    B: “<em>It’s over there, just turn left after the canteen.</em>”<br>
+    A: “<em>Cool, thanks!</em>”<br>
+    B: “<em>No prob!</em>”
+  </p>
+</div>
+
+  <!-- Tips Cepat -->
+<div class="bg-light p-4 rounded-4 shadow mb-4">
+      <h5 class="fw-bold">⚡ Quick Tips!</h5>
+      <ul>
+        <li><strong>“Please”</strong> = magic word! → bikin permintaan terdengar lebih sopan.</li>
+        <li>Gunakan <em>“Could you”</em> atau <em>“Would you mind…”</em> buat nada sopan.</li>
+        <li>Untuk teman: santai aja, tapi tetap sopan ya 😉</li>
+      </ul>
+    </div>
+</section>
 
     <section id="latihan">
-
     <div class="exercise">
       <h2>🎮 Exercise</h2>
       <div id="quiz" class="quiz-box">
@@ -297,38 +327,39 @@
   </div>
 
 <script>
-  const quizData = [
-    {
-      question: "What does 'I'm starving' mean?",
-      answers: ["I'm sleepy", "I'm very hungry"],
-      correct: 1,
-      explanation: "'Starving' means very hungry, not sleepy."
-    },
-    {
-      question: "When do you say 'Long time no see'?",
-      answers: ["When you meet someone again after a long time", "When someone is leaving"],
-      correct: 0,
-      explanation: "This expression is used after not seeing someone for a while."
-    },
-    {
-      question: "What's the best reply to 'What's up?'",
-      answers: ["Not much, you?", "I live upstairs"],
-      correct: 0,
-      explanation: "'What's up?' is like 'How are you?', not a literal question about upstairs."
-    },
-    {
-      question: "If someone says 'No worries', what do they mean?",
-      answers: ["They are worried", "Everything is okay"],
-      correct: 1,
-      explanation: "'No worries' means it's okay, don't worry."
-    },
-    {
-      question: "What does 'You bet!' mean?",
-      answers: ["You have to gamble", "Of course / Definitely"],
-      correct: 1,
-      explanation: "This is a casual way of saying 'Of course!'"
-    },
-  ];
+const quizData = [
+  {
+    question: "Which is more polite when asking for help?",
+    answers: ["Help me with this!", "Could you please help me with this?"],
+    correct: 1,
+    explanation: "'Could you please help me with this?' is more polite and shows respect."
+  },
+  {
+    question: "Which one is more formal?",
+    answers: ["What’s up?", "Good morning, how are you?"],
+    correct: 1,
+    explanation: "'Good morning, how are you?' is a more formal and polite greeting."
+  },
+  {
+    question: "What would you say in a job interview?",
+    answers: ["I wanna work here.", "I would like to work here."],
+    correct: 1,
+    explanation: "'I would like to work here.' is more polite and professional."
+  },
+  {
+    question: "Which is more appropriate in a business email?",
+    answers: ["Can you send me the file?", "Could you kindly send me the file?"],
+    correct: 1,
+    explanation: "'Could you kindly send me the file?' sounds more formal and respectful."
+  },
+  {
+    question: "Which one is less formal?",
+    answers: ["May I come in?", "Can I come in?"],
+    correct: 1,
+    explanation: "'Can I come in?' is less formal and more casual than 'May I come in?'"
+  }
+];
+
 
   let current = 0;
   let correctCount = 0;
@@ -409,8 +440,7 @@
 
   window.onload = loadQuestion;
 </script>
-
-  </section>
+</section>
 
   <footer class="footer-simple">
   <div class="container text-center">

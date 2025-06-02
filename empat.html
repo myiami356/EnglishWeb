@@ -78,39 +78,85 @@
 }
 
 
-    #materi {
-      font-family: 'Poppins', sans-serif;
-      background-color: #ffbaff;
-      color: #333;
-      margin: 0;
-      padding: 0 10px;
-    }
-    h1, h2, h3 {
-      text-align: center;
-    }
-    .section {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 30px 0;
-      text-align: justify;
-    }
-    .cards {
-      max-width: 900px;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 20px;
-      padding: 40px 0;
-      margin: 0 auto;
-  
-    }
-    .card {
-      background-color: #ffffff;
-      padding: 20px;
-      border-left: 8px solid #7b68ee;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
+.teen-slangs-section {
+  width: 100%;
+  padding: 4rem 2rem;
+  background: #ffbaff;
+  color: #4c2b2b;
+}
 
+.teen-slangs-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 600;
+  color: #4a2c2a;
+}
+
+.teen-slangs-section p {
+  max-width: 1100px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.slang-table-container {
+  max-width: 900px;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+.slang-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+}
+
+.slang-table th,
+.slang-table td {
+  border: 1px solid #f0d3c9;
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.slang-table th {
+  background-color: #ffdfc8;
+  color: #472c2c;
+  font-weight: bold;
+}
+
+.slang-table tr:nth-child(even) {
+  background-color: #fffaf7;
+}
+
+.slang-week {
+  background-color: #fff1fb;
+  border-left: 6px solid #d15ba6;
+  padding: 1.5rem;
+  max-width: 900px;
+  margin: 3rem auto 0 auto;
+  border-radius: 15px;
+}
+
+.slang-week h3 {
+  margin: 0 0 0.5rem 0;
+  color: #b04184;
+  font-size: 1.4rem;
+}
+
+.slang-week p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.highlight {
+  color: #ef4a92;
+  font-weight: bold;
+}
     #latihan {
       font-family: 'Poppins', sans-serif;
       background-color: #ffbcbc;
@@ -123,7 +169,7 @@
       max-width: 1000px;
       margin: 0 auto;
       padding: 30px 0;
-      text-align: justify;
+      text-align: center;
 
     }
     .quiz-box {
@@ -180,6 +226,7 @@
       border-radius: 5px;
       cursor: pointer;
     }
+
     .footer-simple {
   background-color: #fff0e6;
   padding: 1.5rem 0;
@@ -244,50 +291,94 @@
   <div class="overlay">
     <div class="container text-center">
       <h1 class="banner-title">
-        🗣 Common Daily Expressions
+        💬 Teen Slangs
       </h1>
-      <p class="banner-subtitle">Everyday expressions you often encounter!</p>
+      <p class="banner-subtitle">Kata gaul yang sering kamu lihat di media sosial!</p>
     </div>
   </div>
 </header>
 
-<section id="materi">
-  <div class="section">
-    <p class="text-justify mb-4 fs-5">
-      In everyday life, native English speakers often use expressions that sound casual and are not always taught in schools. These expressions usually appear in conversations, movies, songs, or social media. Interestingly, their meanings can't always be guessed from the individual words. So, it's important to understand their real meaning and usage. Mastering them will make your English sound more natural and confident.
-    </p>
+<section class="teen-slangs-section">
+  <p>
+    Teen slangs adalah kata atau frasa gaul yang sering digunakan oleh remaja, khususnya di media sosial seperti TikTok, Instagram, atau Snapchat. Kata-kata ini biasanya punya arti yang berbeda dari makna literalnya dan bisa berubah seiring tren.
+  </p>
+  <p>
+    Slang ini mencerminkan budaya pop, emosi, atau reaksi secara singkat dan ekspresif. Meski tidak selalu digunakan dalam situasi formal, memahami slang penting agar kita gak ketinggalan zaman dan bisa memahami percakapan sehari-hari.
+  </p>
 
-    <div class="cards">
-      <div class="card">
-        <h3>1. What's up?</h3>
-        <p><strong>Meaning:</strong> A casual way to say “How are you?”</p>
-        <p><strong>Example:</strong> "What’s up, John?" - "Not much, just chilling."</p>
-      </div>
-      <div class="card">
-        <h3>2. Long time no see!</h3>
-        <p><strong>Meaning:</strong> Used when you meet someone again after a long time.</p>
-        <p><strong>Example:</strong> "Hey, long time no see!" - "Yeah! It’s been like two years!"</p>
-      </div>
-      <div class="card">
-        <h3>3. I'm starving</h3>
-        <p><strong>Meaning:</strong> I'm very hungry.</p>
-        <p><strong>Example:</strong> "Let’s grab some food. I’m starving!"</p>
-      </div>
-      <div class="card">
-        <h3>4. No worries</h3>
-        <p><strong>Meaning:</strong> It's okay / No problem.</p>
-        <p><strong>Example:</strong> "Sorry for being late." - "No worries!"</p>
-      </div>
-      <div class="card">
-        <h3>5. You bet!</h3>
-        <p><strong>Meaning:</strong> Of course / Definitely!</p>
-        <p><strong>Example:</strong> "Will you come to the party tonight?" - "You bet!"</p>
-      </div>
-    </div>
-    </section>
+  <div class="slang-table-container">
+    <table class="slang-table">
+      <thead>
+        <tr>
+          <th>Slang</th>
+          <th>Arti / Asal</th>
+          <th>Contoh Kalimat</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>No cap</td>
+          <td>Artinya "no lie" / "beneran"</td>
+          <td>This movie is so good, no cap.</td>
+        </tr>
+        <tr>
+          <td>Slay</td>
+          <td>Melakukan sesuatu dengan keren</td>
+          <td>You slayed that outfit today!</td>
+        </tr>
+        <tr>
+          <td>I’m dead</td>
+          <td>Ekspresi ketawa banget / lucu parah</td>
+          <td>That meme was hilarious, I’m dead 😂</td>
+        </tr>
+        <tr>
+          <td>Bet</td>
+          <td>Artinya "oke" atau "deal"</td>
+          <td>You coming to the party? – Bet.</td>
+        </tr>
+        <tr>
+          <td>Flex</td>
+          <td>Pamer berlebihan</td>
+          <td>He’s always flexing his new shoes.</td>
+        </tr>
+        <tr>
+          <td>Sus</td>
+          <td>Singkatan dari suspicious (mencurigakan)</td>
+          <td>Why did he leave so fast? That’s sus.</td>
+        </tr>
+        <tr>
+          <td>Yeet</td>
+          <td>Melempar sesuatu dengan semangat</td>
+          <td>He just yeeted his phone across the room.</td>
+        </tr>
+        <tr>
+          <td>Lit</td>
+          <td>Sesuatu yang seru atau keren</td>
+          <td>That concert was lit!</td>
+        </tr>
+        <tr>
+          <td>GOAT</td>
+          <td>Greatest Of All Time</td>
+          <td>Michael Jordan is the GOAT.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="slang-week">
+    <h3>⭐ Slang of the Week: <span class="highlight">Rizz</span></h3>
+    <p>
+      <strong>Rizz</strong> adalah singkatan dari <em>charisma</em>. Digunakan untuk menggambarkan seseorang yang jago menarik perhatian orang lain, terutama dalam konteks flirting atau ngegombal.
+    </p>
+    <p><strong>Contoh:</strong></p>
+    <ul>
+      <li>"He’s got mad rizz – all the girls like him!"</li>
+      <li>"No rizz detected. Try again, bro."</li>
+    </ul>
+  </div>
+</section>
 
     <section id="latihan">
-
     <div class="exercise">
       <h2>🎮 Exercise</h2>
       <div id="quiz" class="quiz-box">
@@ -297,38 +388,38 @@
   </div>
 
 <script>
-  const quizData = [
-    {
-      question: "What does 'I'm starving' mean?",
-      answers: ["I'm sleepy", "I'm very hungry"],
-      correct: 1,
-      explanation: "'Starving' means very hungry, not sleepy."
-    },
-    {
-      question: "When do you say 'Long time no see'?",
-      answers: ["When you meet someone again after a long time", "When someone is leaving"],
-      correct: 0,
-      explanation: "This expression is used after not seeing someone for a while."
-    },
-    {
-      question: "What's the best reply to 'What's up?'",
-      answers: ["Not much, you?", "I live upstairs"],
-      correct: 0,
-      explanation: "'What's up?' is like 'How are you?', not a literal question about upstairs."
-    },
-    {
-      question: "If someone says 'No worries', what do they mean?",
-      answers: ["They are worried", "Everything is okay"],
-      correct: 1,
-      explanation: "'No worries' means it's okay, don't worry."
-    },
-    {
-      question: "What does 'You bet!' mean?",
-      answers: ["You have to gamble", "Of course / Definitely"],
-      correct: 1,
-      explanation: "This is a casual way of saying 'Of course!'"
-    },
-  ];
+const quizData = [
+  {
+    question: "What does 'no cap' mean?",
+    answers: ["No hat", "No lie", "No escape"],
+    correct: 1,
+    explanation: "'No cap' means 'no lie' or 'seriously'."
+  },
+  {
+    question: "Which slang means 'amazing performance or look'?",
+    answers: ["Flex", "Slay", "Sus"],
+    correct: 1,
+    explanation: "'Slay' is used when someone looks amazing or does something really well."
+  },
+  {
+    question: "If someone says 'I’m dead' after seeing a meme, what do they mean?",
+    answers: ["They're tired", "They’re angry", "They find it very funny"],
+    correct: 2,
+    explanation: "'I’m dead' is an expression for finding something extremely funny."
+  },
+  {
+    question: "Which one means 'showing off'?",
+    answers: ["Yeet", "Flex", "Bet"],
+    correct: 1,
+    explanation: "'Flex' is slang for showing off something proudly."
+  },
+  {
+    question: "What does 'rizz' stand for?",
+    answers: ["Charisma or flirting ability", "A type of dance", "Energy drink"],
+    correct: 0,
+    explanation: "'Rizz' is short for charisma, often used in flirting contexts."
+  }
+];
 
   let current = 0;
   let correctCount = 0;
@@ -409,8 +500,7 @@
 
   window.onload = loadQuestion;
 </script>
-
-  </section>
+</section>
 
   <footer class="footer-simple">
   <div class="container text-center">

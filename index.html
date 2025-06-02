@@ -9,6 +9,289 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #fdf4f4;
+      border-bottom: 3px solid #ffe3d5;
+    }
+
+    .navbar-brand {
+      font-weight:900;
+      font-size: 25px;
+      color: #ab51f5;
+    }
+
+    .navbar-brand span {
+      color: #ff3ea8;
+    }
+
+    .nav-link {
+      color: #444 !important;
+      font-size: 18px;
+      margin-right: 20px;
+      transition: color 0.3s;
+    }
+
+    .nav-link:hover {
+      color: #f57c51 !important;
+    }
+
+    .hero {
+    background-image: url('img/english.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    color: #000;
+    position: relative;
+    }
+
+    .hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+
+    .hero-overlay {
+    background: linear-gradient(to bottom right, rgba(205, 231, 255, 0.85), rgba(255, 153, 187, 0.726));
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero-overlay h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #000;
+    }
+
+    .hero-overlay p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #333;
+    }
+        .btn-custom {
+        font-size: 18px;
+        padding: 10px 28px;
+        border-radius: 12px;
+        }
+
+        .btn-outline-dark {
+        font-size: 18px;
+        padding: 10px 28px;
+        border-radius: 12px;
+        }
+
+        html {
+  scroll-behavior: smooth;
+}
+
+/* About Section */
+#about {
+  padding-top: 120px;
+  margin-top: -60px; /* untuk mengimbangi navbar tinggi */
+  background-color: #ffe2ef;
+  padding-bottom: 120px;
+  margin-bottom: -60px; /* untuk mengimbangi navbar tinggi */
+}
+
+#about .section-title {
+  font-size: 1.8rem;
+  color: #e85e9c;
+  font-weight: 700;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+#about .section-title::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background: #e85e9c;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 10px;
+}
+
+#about p {
+  max-width: 750px;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* Button Custom */
+.btn-primary {
+  background-color: #e85e9c;
+  border-color: #e85e9c;
+}
+
+.btn-primary:hover {
+  background-color: #d84a88;
+  border-color: #d84a88;
+}
+
+.btn-light {
+  background-color: #ffffff;
+  color: #e85e9c;
+  border: 2px solid #e85e9c;
+}
+
+.btn-light:hover {
+  background-color: #fef2f7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  #about .section-title {
+    font-size: 1.5rem;
+  }
+
+  #about p {
+    font-size: 0.95rem;
+  }
+}
+
+.section-title {
+  color: #ff6b81;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #ff6b81;
+  margin: 5px auto 0;
+  border-radius: 2px;
+}
+
+
+        #materi-section {
+  padding: 60px 0;
+  background-color: #e6bcfa;
+}
+
+.materi-intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.materi-intro h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #9726ad;
+  text-align: center;
+}
+
+
+.card-materi {
+  background: #fffdfd;
+  border: 2px solid #ffe4c4;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card-materi h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.card-materi .desc-hover {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 234, 210, 0.96);
+  padding: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #333;
+  transition: bottom 0.3s ease;
+  border-top: 1px solid #ffcfa2;
+}
+
+.card-materi:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card-materi:hover .desc-hover {
+  bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .card-materi {
+    text-align: center;
+    min-height: auto;
+  }
+
+  .card-materi .desc-hover {
+    font-size: 0.85rem;
+  }
+}
+
+.footer-simple {
+  background-color: #fff0e6;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+  color: #333;
+  border-top: 1px solid #ffd6c0;
+}
+
+.footer-simple .instagram-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-decoration: none;
+  color: #e1306c;
+  font-weight: 500;
+}
+
+.footer-simple .instagram-link:hover {
+  text-decoration: underline;
+}
+
+.instagram-icon {
+  width: 18px;
+  height: 18px;
+}
+  </style>
 </head>
 
 <body>
@@ -21,22 +304,23 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav align-items-center">
-          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Quiz</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
         <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="materiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Materi
         </a>
         <ul class="dropdown-menu" aria-labelledby="materiDropdown">
-            <li><a class="dropdown-item" href="#common-daily">Common Daily Expressions</a></li>
-            <li><a class="dropdown-item" href="#polite-casual">Polite vs Casual</a></li>
-            <li><a class="dropdown-item" href="#idioms">Idioms & Expressions</a></li>
-            <li><a class="dropdown-item" href="#teen-slangs">Teen Slangs</a></li>
-            <li><a class="dropdown-item" href="#grammar-tips">Grammar Tips</a></li>
-            <li><a class="dropdown-item" href="#mini-convos">Mini Conversations</a></li>
+            <li><a class="dropdown-item" href="satu.html">Common Daily Expressions</a></li>
+            <li><a class="dropdown-item" href="dua.html">Polite vs Casual</a></li>
+            <li><a class="dropdown-item" href="tiga.html">Idioms & Expressions</a></li>
+            <li><a class="dropdown-item" href="empat.html">Teen Slangs</a></li>
+            <li><a class="dropdown-item" href="lima.html">Grammar Tips</a></li>
+            <li><a class="dropdown-item" href="enam.html">Mini Conversations</a></li>
         </ul>
         </li>
+        </ul>
       </div>
     </div>
   </nav>
@@ -46,7 +330,7 @@
     <div class="container hero-content">
       <div class="hero-overlay">
         <h1>English Everyday: <br />Fun Learning for Real Life</h1>
-        <p>Belajar Bahasa Inggris gak harus ngebosenin. Yuk, pelajari ekspresi sehari-hari, slang, dan grammar ringan dengan cara yang fun!</p>
+        <p>Learning English doesn't have to be boring. Let's learn everyday expressions, slang, and basic grammar in a fun way!</p>
         <a href="#about" class="btn btn-outline-dark">Start Learn!</a>
       </div>
     </div>
@@ -57,9 +341,9 @@
     <div class="container text-center">
       <h2 class="section-title">What’s Inside?</h2>
       <p class="mx-auto">
-        Website ini dirancang untuk bantu kamu belajar Bahasa Inggris secara menyenangkan dan aplikatif.
-        Kamu bisa pelajari ekspresi harian, idiom lucu, slang kekinian, bahkan grammar ringan dengan cara interaktif!
-        Cocok banget buat pelajar, mahasiswa, atau siapa pun yang pengen improve English tanpa pusing.
+        This website is designed to help you learn English in a fun and practical way.
+        You can learn everyday expressions, funny idioms, modern slang, and even basic grammar in an interactive way!
+        It's perfect for students, college students, or anyone who wants to improve their English without stress.
       </p>
     </div>
   </section>
@@ -69,81 +353,93 @@
   <section id="materi-section">
     <div class="container">
       <div class="materi-intro">
-        <h2>Siap Belajar?</h2>
-        <p>Pilih topik yang kamu suka, dan mulai belajar dengan cara yang menyenangkan!</p>
+        <h2>Ready to learn?</h2>
+        <p>Choose a topic you like, and start learning in a fun way!</p>
       </div>
 
   <div class="row g-4">
   <!-- Card 1 -->
   <div class="col-md-4">
+  <a href="satu.html" class="text-decoration-none text-dark">
     <div class="card-materi p-4">
       <h4>🗣 Common Daily Expressions</h4>
       <div class="desc-hover">
-        Pelajari ekspresi sehari-hari yang sering dipakai dalam percakapan casual!
+        Learn everyday expressions that are often used in casual conversation!
       </div>
     </div>
-  </div>
+  </a>
+</div>
   <!-- Card 2 -->
   <div class="col-md-4">
+  <a href="dua.html" class="text-decoration-none text-dark">
     <div class="card-materi p-4">
       <h4>😎 Polite vs Casual English</h4>
       <div class="desc-hover">
-        Bedakan cara sopan dan santai saat ngomong bahasa Inggris.
+        Distinguish between polite and casual ways of speaking English.
       </div>
     </div>
-  </div>
+  </a>
+</div>
   <!-- Card 3 -->
   <div class="col-md-4">
+  <a href="tiga.html" class="text-decoration-none text-dark">
     <div class="card-materi p-4">
       <h4>🎉 Idioms & Expressions</h4>
       <div class="desc-hover">
-        Temukan idiom unik seperti “raining cats and dogs” dan artinya!
+        Discover unique idioms such as “raining cats and dogs” and their meanings!
       </div>
     </div>
-  </div>
+  </a>
+</div>
   <!-- Card 4 -->
   <div class="col-md-4">
+  <a href="empat.html" class="text-decoration-none text-dark">
     <div class="card-materi p-4">
       <h4>🔥 Teen Slangs</h4>
       <div class="desc-hover">
-        Kenali kata gaul kayak “slay”, “no cap”, dan gimana cara pakainya!
-      </div>
+        Learn slang words like “slay” and “no cap” and how to use them!
+       </div>
     </div>
-  </div>
+  </a>
+</div>
   <!-- Card 5 -->
   <div class="col-md-4">
+  <a href="lima.html" class="text-decoration-none text-dark">
     <div class="card-materi p-4">
       <h4>📚 Quick Grammar Tips</h4>
       <div class="desc-hover">
-        Belajar grammar tricky kayak “say vs tell” atau “little vs a little” secara simpel!
+        Learn tricky grammar like “say vs tell” or “little vs a little” in a simple way!
       </div>
     </div>
-  </div>
+  </a>
+</div>
   <!-- Card 6 -->
   <div class="col-md-4">
+  <a href="enam.html" class="text-decoration-none text-dark">
     <div class="card-materi p-4">
       <h4>💬 Mini Conversations</h4>
       <div class="desc-hover">
-        Latihan percakapan pendek di kafe, bandara, dan lainnya. Bisa dengerin juga!
+        Short conversation practice in cafes, airports, and other places. You can listen to it too!
       </div>
     </div>
-  </div>
+  </a>
+</div>
 </div>
   </section>
 
 <section class="section-cards">
   <div class="container">
-    <!-- card row di sini -->
   </div>
 </section>
 
 <footer class="footer-simple">
   <div class="container text-center">
-    <p class="mb-1">© 2025 SmartEng. All rights reserved.</p>
-    <a href="https://instagram.com/nama_ig_kamu" target="_blank" class="instagram-link">
+    <p class="mb-1">© 2025 Najmi Khairurizqa. All rights reserved.</p>
+    <a href="https://www.instagram.com/najmii.khq/" target="_blank" class="instagram-link">
       <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="instagram-icon">
-      @smarteng.id
+      @najmii.khq
     </a>
+    <p class="mb-1">TRPL 2C | Politeknik Negeri Medan</p>
   </div>
 </footer>
 

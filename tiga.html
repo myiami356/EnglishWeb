@@ -76,41 +76,82 @@
   font-weight: 400;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
 }
+.idioms {
+  background: #ffbaff;
+  padding: 60px 20px;
+  color: #333;
+}
 
+.title-section {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #1f2937;
+}
+.desc {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1rem;
+  color: #4a2c2a;
+}
 
-    #materi {
-      font-family: 'Poppins', sans-serif;
-      background-color: #ffbaff;
-      color: #333;
-      margin: 0;
-      padding: 0 10px;
-    }
-    h1, h2, h3 {
-      text-align: center;
-    }
-    .section {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 30px 0;
-      text-align: justify;
-    }
-    .cards {
-      max-width: 900px;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 20px;
-      padding: 40px 0;
-      margin: 0 auto;
-  
-    }
-    .card {
-      background-color: #ffffff;
-      padding: 20px;
-      border-left: 8px solid #7b68ee;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
+.idiom-section-title {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
 
+.idiom-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.idiom-card {
+  flex: 1 1 calc(33.333% - 20px);
+  background: #fef9f0;
+  border: 2px solid #fcd34d;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: 0.2s ease;
+}
+
+.idiom-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.idiom-card h4 {
+  margin-bottom: 10px;
+  color: #b45309;
+}
+
+.idiom-card .example {
+  margin-top: 10px;
+  font-style: italic;
+  color: #4b5563;
+}
+
+.idiom-card .emoji {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+.slang-box {
+  background: #fde9ff;
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 5px solid #c702b6;
+  max-width: 900px;
+  margin: auto;
+  color: #1f2937;
+}
+.slang-box h4 {
+  margin: 0 0 0.5rem 0;
+  color: #b04184;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
     #latihan {
       font-family: 'Poppins', sans-serif;
       background-color: #ffbcbc;
@@ -123,7 +164,7 @@
       max-width: 1000px;
       margin: 0 auto;
       padding: 30px 0;
-      text-align: justify;
+      text-align: center;
 
     }
     .quiz-box {
@@ -244,50 +285,101 @@
   <div class="overlay">
     <div class="container text-center">
       <h1 class="banner-title">
-        🗣 Common Daily Expressions
+        🗯️ Idioms & Expressions
       </h1>
-      <p class="banner-subtitle">Everyday expressions you often encounter!</p>
+      <p class="banner-subtitle">Bikin ngomongmu makin keren dengan idiom-idiom unik!</p>
     </div>
   </div>
 </header>
 
-<section id="materi">
-  <div class="section">
+<section class="section idioms" id="idioms">
+  <div class="container">
     <p class="text-justify mb-4 fs-5">
-      In everyday life, native English speakers often use expressions that sound casual and are not always taught in schools. These expressions usually appear in conversations, movies, songs, or social media. Interestingly, their meanings can't always be guessed from the individual words. So, it's important to understand their real meaning and usage. Mastering them will make your English sound more natural and confident.
+      Idioms itu ungkapan khas yang gak bisa diterjemahkan kata per kata. Contohnya kayak <b>“spill the beans”</b> yang artinya <em>membocorkan rahasia</em>, bukan literally tumpahin kacang! 😆<br><br>
+      Biasanya idiom dipakai biar ngomongnya lebih ekspresif, natural, dan kayak native speaker. Yuk kenalan sama idiom-idiom lucu dan unik berdasarkan tema!
     </p>
 
-    <div class="cards">
-      <div class="card">
-        <h3>1. What's up?</h3>
-        <p><strong>Meaning:</strong> A casual way to say “How are you?”</p>
-        <p><strong>Example:</strong> "What’s up, John?" - "Not much, just chilling."</p>
+    <!-- 🍔 Idioms tentang Makanan -->
+    <h3 class="idiom-section-title">🍔 Idioms tentang Makanan</h3>
+    <div class="idiom-grid">
+      <div class="idiom-card">
+        <h4>Piece of cake</h4>
+        <p><em>Artinya:</em> Sesuatu yang sangat mudah</p>
+        <p class="example">"That test was a piece of cake!"</p>
+        <div class="emoji">🍰</div>
       </div>
-      <div class="card">
-        <h3>2. Long time no see!</h3>
-        <p><strong>Meaning:</strong> Used when you meet someone again after a long time.</p>
-        <p><strong>Example:</strong> "Hey, long time no see!" - "Yeah! It’s been like two years!"</p>
+      <div class="idiom-card">
+        <h4>Spill the beans</h4>
+        <p><em>Artinya:</em> Membocorkan rahasia</p>
+        <p class="example">"Come on, spill the beans!"</p>
+        <div class="emoji">🤭</div>
       </div>
-      <div class="card">
-        <h3>3. I'm starving</h3>
-        <p><strong>Meaning:</strong> I'm very hungry.</p>
-        <p><strong>Example:</strong> "Let’s grab some food. I’m starving!"</p>
-      </div>
-      <div class="card">
-        <h3>4. No worries</h3>
-        <p><strong>Meaning:</strong> It's okay / No problem.</p>
-        <p><strong>Example:</strong> "Sorry for being late." - "No worries!"</p>
-      </div>
-      <div class="card">
-        <h3>5. You bet!</h3>
-        <p><strong>Meaning:</strong> Of course / Definitely!</p>
-        <p><strong>Example:</strong> "Will you come to the party tonight?" - "You bet!"</p>
+      <div class="idiom-card">
+        <h4>In a pickle</h4>
+        <p><em>Artinya:</em> Dalam masalah</p>
+        <p class="example">"I forgot my homework and now I’m in a pickle."</p>
+        <div class="emoji">🥒</div>
       </div>
     </div>
-    </section>
+
+    <!-- 😱 Idioms tentang Emosi -->
+    <h3 class="idiom-section-title">😱 Idioms tentang Emosi</h3>
+    <div class="idiom-grid">
+      <div class="idiom-card">
+        <h4>Blow off steam</h4>
+        <p><em>Artinya:</em> Melampiaskan emosi</p>
+        <p class="example">"He plays video games to blow off steam."</p>
+        <div class="emoji">🫖</div>
+      </div>
+      <div class="idiom-card">
+        <h4>Cry over spilled milk</h4>
+        <p><em>Artinya:</em> Menyesali hal yang udah terjadi</p>
+        <p class="example">"Don’t cry over spilled milk."</p>
+        <div class="emoji">🥛</div>
+      </div>
+      <div class="idiom-card">
+        <h4>Jump for joy</h4>
+        <p><em>Artinya:</em> Sangat senang</p>
+        <p class="example">"She jumped for joy!"</p>
+        <div class="emoji">☁️</div>
+      </div>
+    </div>
+
+    <!-- 💘 Idioms tentang Cinta -->
+    <h3 class="idiom-section-title">💘 Idioms tentang Cinta & Hubungan</h3>
+    <div class="idiom-grid">
+      <div class="idiom-card">
+        <h4>Head over heels</h4>
+        <p><em>Artinya:</em> Sangat jatuh cinta</p>
+        <p class="example">"He’s head over heels for her."</p>
+        <div class="emoji">💘</div>
+      </div>
+      <div class="idiom-card">
+        <h4>Break someone’s heart</h4>
+        <p><em>Artinya:</em> Membuat seseorang sedih karena cinta</p>
+        <p class="example">"She broke his heart."</p>
+        <div class="emoji">💔</div>
+      </div>
+      <div class="idiom-card">
+        <h4>Lovebirds</h4>
+        <p><em>Artinya:</em> Pasangan yang saling jatuh cinta</p>
+        <p class="example">"Look at those two lovebirds!"</p>
+        <div class="emoji">🕊️</div>
+      </div>
+    </div>
+
+    <!-- Slang of the Week -->
+    <div class="slang-box mt-5">
+      <h4>💡 Slang of the Week!</h4>
+      <p><strong>Bite the bullet</strong> – Melakukan sesuatu yang gak enak tapi harus<br>
+        <em>"I had to bite the bullet and go to the dentist."</em><br>
+        <small>Asal: Tentara zaman dulu beneran gigit peluru saat dioperasi tanpa bius 😖💉</small>
+      </p>
+    </div>
+  </div>
+</section>
 
     <section id="latihan">
-
     <div class="exercise">
       <h2>🎮 Exercise</h2>
       <div id="quiz" class="quiz-box">
@@ -297,38 +389,39 @@
   </div>
 
 <script>
-  const quizData = [
-    {
-      question: "What does 'I'm starving' mean?",
-      answers: ["I'm sleepy", "I'm very hungry"],
-      correct: 1,
-      explanation: "'Starving' means very hungry, not sleepy."
-    },
-    {
-      question: "When do you say 'Long time no see'?",
-      answers: ["When you meet someone again after a long time", "When someone is leaving"],
-      correct: 0,
-      explanation: "This expression is used after not seeing someone for a while."
-    },
-    {
-      question: "What's the best reply to 'What's up?'",
-      answers: ["Not much, you?", "I live upstairs"],
-      correct: 0,
-      explanation: "'What's up?' is like 'How are you?', not a literal question about upstairs."
-    },
-    {
-      question: "If someone says 'No worries', what do they mean?",
-      answers: ["They are worried", "Everything is okay"],
-      correct: 1,
-      explanation: "'No worries' means it's okay, don't worry."
-    },
-    {
-      question: "What does 'You bet!' mean?",
-      answers: ["You have to gamble", "Of course / Definitely"],
-      correct: 1,
-      explanation: "This is a casual way of saying 'Of course!'"
-    },
-  ];
+const quizData = [
+  {
+    question: "What does 'piece of cake' mean?",
+    answers: ["Something delicious", "Something easy", "Something broken"],
+    correct: 1,
+    explanation: "'Piece of cake' means something very easy to do."
+  },
+  {
+    question: "If someone tells you to 'spill the beans', what do they want?",
+    answers: ["Cook beans", "Share a secret", "Eat together"],
+    correct: 1,
+    explanation: "'Spill the beans' means to reveal a secret."
+  },
+  {
+    question: "What does 'in a pickle' describe?",
+    answers: ["In a funny moment", "In trouble", "Eating pickles"],
+    correct: 1,
+    explanation: "'In a pickle' means in a difficult or troubling situation."
+  },
+  {
+    question: "Which idiom means 'to be extremely happy'?",
+    answers: ["Cry over spilled milk", "Blow off steam", "Jump for joy"],
+    correct: 2,
+    explanation: "'Jump for joy' means to be very happy."
+  },
+  {
+    question: "What does 'head over heels' mean?",
+    answers: ["Falling down", "Falling deeply in love", "Doing a somersault"],
+    correct: 1,
+    explanation: "'Head over heels' means to be deeply in love."
+  }
+];
+
 
   let current = 0;
   let correctCount = 0;
@@ -409,8 +502,7 @@
 
   window.onload = loadQuestion;
 </script>
-
-  </section>
+</section>
 
   <footer class="footer-simple">
   <div class="container text-center">

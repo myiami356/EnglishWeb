@@ -76,42 +76,71 @@
   font-weight: 400;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
 }
+.mini-convo-section {
+  width: 100%;
+  padding: 4rem 2rem;
+  background: #ffbaff;
+  color: #4c2b2b;
+}
 
+.mini-convo-section p {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  text-align: justify;
+}
 
-    #materi {
-      font-family: 'Poppins', sans-serif;
-      background-color: #ffbaff;
-      color: #333;
-      margin: 0;
-      padding: 0 10px;
-    }
-    h1, h2, h3 {
-      text-align: center;
-    }
-    .section {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 30px 0;
-      text-align: justify;
-    }
-    .cards {
-      max-width: 900px;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 20px;
-      padding: 40px 0;
-      margin: 0 auto;
-  
-    }
-    .card {
-      background-color: #ffffff;
-      padding: 20px;
-      border-left: 8px solid #7b68ee;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
+.convo-table-container {
+  max-width: 950px;
+  margin: 2rem auto;
+  overflow-x: auto;
+}
 
-    #latihan {
+.convo-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.convo-table th,
+.convo-table td {
+  border: 1px solid #f0d3c9;
+  padding: 1rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.convo-table th {
+  background-color: #ffdfc8;
+  font-weight: bold;
+  color: #4c2b2b;
+}
+
+.audio-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.tip-box {
+  background-color: #ffffff;
+  border-left: 6px solid #c737af;
+  padding: 1.5rem;
+  max-width: 950px;
+  margin: 3rem auto 0 auto;
+  border-radius: 15px;
+}
+
+.tip-box h3 {
+  margin-bottom: 0.5rem;
+  color: #b658d3;
+  font-weight: bold;
+}
+#latihan {
       font-family: 'Poppins', sans-serif;
       background-color: #ffbcbc;
       color: #333;
@@ -123,7 +152,7 @@
       max-width: 1000px;
       margin: 0 auto;
       padding: 30px 0;
-      text-align: justify;
+      text-align: center;
 
     }
     .quiz-box {
@@ -244,50 +273,65 @@
   <div class="overlay">
     <div class="container text-center">
       <h1 class="banner-title">
-        🗣 Common Daily Expressions
+        ✨ Mini Conversations
       </h1>
-      <p class="banner-subtitle">Everyday expressions you often encounter!</p>
+      <p class="banner-subtitle">ercakapan pendek untuk situasi sehari-hari — cepat, praktis, dan real-life banget!</p>
     </div>
   </div>
 </header>
+<section class="mini-convo-section">
+  <p>
+    Mini conversations adalah percakapan pendek yang terjadi dalam kehidupan sehari-hari. Materi ini membantumu belajar bagaimana orang berbicara dalam konteks nyata, seperti saat memesan kopi, membeli barang, atau saat check-in di bandara.
+  </p>
+  <p>
+    Dengan memahami ekspresi umum dan struktur kalimat yang sering digunakan, kamu akan lebih siap dan percaya diri saat berkomunikasi dalam bahasa Inggris.
+  </p>
 
-<section id="materi">
-  <div class="section">
-    <p class="text-justify mb-4 fs-5">
-      In everyday life, native English speakers often use expressions that sound casual and are not always taught in schools. These expressions usually appear in conversations, movies, songs, or social media. Interestingly, their meanings can't always be guessed from the individual words. So, it's important to understand their real meaning and usage. Mastering them will make your English sound more natural and confident.
+  <div class="convo-table-container">
+    <table class="convo-table">
+      <thead>
+        <tr>
+          <th>Skenario</th>
+          <th>Percakapan</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>☕ Di Kafe</td>
+          <td>
+            <strong>Customer:</strong> Hi, can I get a cappuccino, please?<br>
+            <strong>Barista:</strong> Sure! Anything else?<br>
+            <strong>Customer:</strong> No, that's all. Thanks!
+          </td>
+        </tr>
+        <tr>
+          <td>🛫 Di Bandara</td>
+          <td>
+            <strong>Staff:</strong> May I see your passport and boarding pass?<br>
+            <strong>Passenger:</strong> Here you go.<br>
+            <strong>Staff:</strong> Thank you. You're all set!
+          </td>
+        </tr>
+        <tr>
+          <td>🛍️ Di Toko</td>
+          <td>
+            <strong>Clerk:</strong> Can I help you find something?<br>
+            <strong>Customer:</strong> Yes, I’m looking for a black T-shirt.<br>
+            <strong>Clerk:</strong> They’re in aisle 3.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="tip-box">
+    <h3>💡 Tips!</h3>
+    <p>
+      Latihan dengan cara menirukan percakapan ini secara berulang akan sangat membantu meningkatkan pronunciation dan kepercayaan diri kamu!
     </p>
-
-    <div class="cards">
-      <div class="card">
-        <h3>1. What's up?</h3>
-        <p><strong>Meaning:</strong> A casual way to say “How are you?”</p>
-        <p><strong>Example:</strong> "What’s up, John?" - "Not much, just chilling."</p>
-      </div>
-      <div class="card">
-        <h3>2. Long time no see!</h3>
-        <p><strong>Meaning:</strong> Used when you meet someone again after a long time.</p>
-        <p><strong>Example:</strong> "Hey, long time no see!" - "Yeah! It’s been like two years!"</p>
-      </div>
-      <div class="card">
-        <h3>3. I'm starving</h3>
-        <p><strong>Meaning:</strong> I'm very hungry.</p>
-        <p><strong>Example:</strong> "Let’s grab some food. I’m starving!"</p>
-      </div>
-      <div class="card">
-        <h3>4. No worries</h3>
-        <p><strong>Meaning:</strong> It's okay / No problem.</p>
-        <p><strong>Example:</strong> "Sorry for being late." - "No worries!"</p>
-      </div>
-      <div class="card">
-        <h3>5. You bet!</h3>
-        <p><strong>Meaning:</strong> Of course / Definitely!</p>
-        <p><strong>Example:</strong> "Will you come to the party tonight?" - "You bet!"</p>
-      </div>
-    </div>
-    </section>
-
+  </div>
+</section>
     <section id="latihan">
-
     <div class="exercise">
       <h2>🎮 Exercise</h2>
       <div id="quiz" class="quiz-box">
@@ -297,38 +341,38 @@
   </div>
 
 <script>
-  const quizData = [
-    {
-      question: "What does 'I'm starving' mean?",
-      answers: ["I'm sleepy", "I'm very hungry"],
-      correct: 1,
-      explanation: "'Starving' means very hungry, not sleepy."
-    },
-    {
-      question: "When do you say 'Long time no see'?",
-      answers: ["When you meet someone again after a long time", "When someone is leaving"],
-      correct: 0,
-      explanation: "This expression is used after not seeing someone for a while."
-    },
-    {
-      question: "What's the best reply to 'What's up?'",
-      answers: ["Not much, you?", "I live upstairs"],
-      correct: 0,
-      explanation: "'What's up?' is like 'How are you?', not a literal question about upstairs."
-    },
-    {
-      question: "If someone says 'No worries', what do they mean?",
-      answers: ["They are worried", "Everything is okay"],
-      correct: 1,
-      explanation: "'No worries' means it's okay, don't worry."
-    },
-    {
-      question: "What does 'You bet!' mean?",
-      answers: ["You have to gamble", "Of course / Definitely"],
-      correct: 1,
-      explanation: "This is a casual way of saying 'Of course!'"
-    },
-  ];
+const quizData = [
+  {
+    question: "What would you likely say when ordering coffee?",
+    answers: [
+      "Where is the gate?",
+      "Can I get a cappuccino, please?",
+      "I’m looking for black shoes."
+    ],
+    correct: 1,
+    explanation: "The phrase 'Can I get a cappuccino, please?' is typically used at a café."
+  },
+  {
+    question: "Where might you hear: 'May I see your passport and boarding pass?'",
+    answers: [
+      "At the store",
+      "At the airport",
+      "At a restaurant"
+    ],
+    correct: 1,
+    explanation: "This is a common question during check-in at the airport."
+  },
+  {
+    question: "What is a proper response to: 'Can I help you find something?'",
+    answers: [
+      "Yes, I’m looking for a black T-shirt.",
+      "I’d like a coffee, please.",
+      "Here's my boarding pass."
+    ],
+    correct: 0,
+    explanation: "This response fits a store setting where you’re looking for something."
+  }
+];
 
   let current = 0;
   let correctCount = 0;
@@ -409,8 +453,7 @@
 
   window.onload = loadQuestion;
 </script>
-
-  </section>
+</section>
 
   <footer class="footer-simple">
   <div class="container text-center">
