@@ -221,11 +221,11 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav align-items-center">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
+          <li class="nav-item"><a class="nav-link" href="firstquiz.html">Quiz</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
         <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="materiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Materi
+            Moduls
         </a>
         <ul class="dropdown-menu" aria-labelledby="materiDropdown">
             <li><a class="dropdown-item" href="satu.html">Common Daily Expressions</a></li>
@@ -258,10 +258,10 @@
 
     <!-- Penjelasan Lebih Panjang -->
     <p class="text-justify mb-4 fs-5">
-      Dalam belajar bahasa Inggris, penting untuk tahu kapan harus pakai gaya bahasa yang sopan (polite) dan kapan bisa santai (casual).
-      Gaya sopan sering dipakai saat ngobrol sama orang yang lebih tua, dosen, guru, atau orang yang belum terlalu akrab.
-      Sedangkan gaya casual biasanya dipakai ke teman sebaya, orang dekat, atau dalam suasana nonformal.
-      Kalau kamu bisa bedakan dua gaya ini, kamu bakal lebih mudah beradaptasi di situasi apa pun—baik di sekolah, tempat kerja, maupun lingkungan sosial.
+      When learning English, it is important to know when to use polite language and when to use casual language.
+      Polite language is often used when talking to older people, professors, teachers, or people you are not very familiar with.
+      Casual language, on the other hand, is usually used with peers, close friends, or in informal settings.
+      If you can distinguish between these two styles, you will find it easier to adapt to any situation—whether at school, work, or in social settings.
     </p>
 
     <!-- Perbandingan Side-by-Side (Rounded Box) -->
@@ -288,7 +288,7 @@
 
  <!-- Dialog Dua Versi -->
 <div class="bg-light p-4 rounded-4 shadow mb-4">
-  <h5 class="fw-bold">🎭 Contoh Dialog</h5>
+  <h5 class="fw-bold">🎭 Example</h5>
   <p><strong>Polite:</strong></p>
   <p>
     A: “<em>Excuse me, could you show me the way to the library?</em>”<br>
@@ -310,9 +310,9 @@
 <div class="bg-light p-4 rounded-4 shadow mb-4">
       <h5 class="fw-bold">⚡ Quick Tips!</h5>
       <ul>
-        <li><strong>“Please”</strong> = magic word! → bikin permintaan terdengar lebih sopan.</li>
-        <li>Gunakan <em>“Could you”</em> atau <em>“Would you mind…”</em> buat nada sopan.</li>
-        <li>Untuk teman: santai aja, tapi tetap sopan ya 😉</li>
+        <li><strong>“Please”</strong> = magic word! → make requests sound more polite.</li>
+        <li>Use <em>“Could you”</em> or <em>“Would you mind…”</em> for polite noises.</li>
+        <li>For friends: just relax, but remain polite, okay? 😉</li>
       </ul>
     </div>
 </section>
@@ -396,7 +396,7 @@ const quizData = [
     });
 
     if (i === q.correct) {
-      feedback.textContent = "🎉 Hebat! Anda benar!";
+      feedback.textContent = "🎉 Great! You're right!";
       correctCount++;
     } else {
       feedback.textContent = `Oops! ${q.explanation}`;

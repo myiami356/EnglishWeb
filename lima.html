@@ -257,11 +257,11 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav align-items-center">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
+          <li class="nav-item"><a class="nav-link" href="firstquiz.html">Quiz</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
         <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="materiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Materi
+            Moduls
         </a>
         <ul class="dropdown-menu" aria-labelledby="materiDropdown">
             <li><a class="dropdown-item" href="satu.html">Common Daily Expressions</a></li>
@@ -284,33 +284,32 @@
       <h1 class="banner-title">
         ✏️ Quick Grammar Tips
       </h1>
-      <p class="banner-subtitle">Micro-grammar yang sering bikin bingung, tapi penting!</p>
+      <p class="banner-subtitle">Micro-grammar is often confused, but important!</p>
     </div>
   </div>
 </header>
 <section class="grammar-tips-section">
   <p>
-    Dalam belajar Bahasa Inggris, kadang kita justru bingung dengan grammar kecil atau micro-grammar seperti “a little vs little”, “say vs tell”, atau “much vs many”. Meskipun terlihat sepele, perbedaan kecil ini bisa mengubah makna dan memengaruhi kejelasan pesan yang ingin kita sampaikan.
-  </p>
+    In learning English, sometimes we are confused by small grammar or micro-grammar such as "a little vs little", "say vs tell", or "much vs many". Although it seems trivial, these small differences can change the meaning and affect the clarity of the message we want to convey. </p>
   <p>
-    Di bawah ini adalah penjelasan praktis dan contoh kalimat yang bisa membantumu memahami perbedaan tersebut dengan mudah. Yuk, pahami dan latih agar makin jago!
+  Below is a practical explanation and example sentences that can help you understand these differences easily. Come on, understand and practice to become even better!
   </p>
 
   <div class="grammar-table-container">
     <table class="grammar-table">
       <thead>
         <tr>
-          <th>Pasangan Grammar</th>
-          <th>Penjelasan</th>
-          <th>Contoh Kalimat</th>
+          <th>Grammar Pairs</th>
+          <th>Explanation</th>
+          <th>Example Sentences</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>A little vs Little</td>
           <td>
-            <strong>A little</strong>: sedikit tapi cukup<br>
-            <strong>Little</strong>: sedikit dan tidak cukup
+            <strong>A little</strong>: little but enough<br>
+            <strong>Little</strong>: little and not enough
           </td>
           <td>
             I have <strong>a little</strong> money left, so I can buy snacks.<br>
@@ -320,8 +319,8 @@
         <tr>
           <td>Much vs Many</td>
           <td>
-            <strong>Much</strong>: untuk benda tak terhitung<br>
-            <strong>Many</strong>: untuk benda bisa dihitung
+            <strong>Much</strong>: for uncountable objects<br>
+            <strong>Many</strong>: for countable objects
           </td>
           <td>
             I don’t have <strong>much</strong> sugar.<br>
@@ -331,8 +330,8 @@
         <tr>
           <td>Say vs Tell</td>
           <td>
-            <strong>Say</strong>: tidak perlu objek orang<br>
-            <strong>Tell</strong>: harus menyebut siapa yang diberi tahu
+            <strong>Say</strong>: no need for person object<br>
+            <strong>Tell</strong>: must mention who is being told
           </td>
           <td>
             She <strong>said</strong> it was raining.<br>
@@ -346,9 +345,9 @@
   <div class="grammar-highlight">
     <h3>📌 Tips Cepat:</h3>
     <ul>
-      <li><strong>A little</strong> = cukup, <strong>little</strong> = hampir tidak ada</li>
-      <li><strong>Much</strong> untuk air, waktu, uang – <strong>Many</strong> untuk orang, benda bisa dihitung</li>
-      <li><strong>Tell</strong> selalu butuh objek → me, you, him, her</li>
+      <li><strong>A little</strong> = enough, <strong>little</strong> = almost none</li>
+      <li><strong>Much</strong> for water, time, money – <strong>Many</strong> for people, countable objects</li>
+      <li><strong>Tell</strong> always needs an object → me, you, him, her</li>
     </ul>
   </div>
 </section>
@@ -431,7 +430,7 @@ const quizData = [
     });
 
     if (i === q.correct) {
-      feedback.textContent = "🎉 Hebat! Anda benar!";
+      feedback.textContent = "🎉 Great! You're right!";
       correctCount++;
     } else {
       feedback.textContent = `Oops! ${q.explanation}`;
@@ -449,7 +448,7 @@ const quizData = [
         loadQuestion();
       };
     } else {
-      nextBtn.textContent = "Lihat Hasil";
+      nextBtn.textContent = "View Result";
       nextBtn.onclick = showResult;
     }
     
@@ -459,9 +458,9 @@ const quizData = [
   function showResult() {
     const quizDiv = document.getElementById("quiz");
     quizDiv.innerHTML = `
-      <h3>🎉 Quiz Selesai!</h3>
-      <p>Jawaban Benar: <strong>${correctCount}</strong></p>
-      <p>Jawaban Salah: <strong>${wrongCount}</strong></p>
+      <h3>🎉 Quiz Done!</h3>
+      <p>Correct Answer: <strong>${correctCount}</strong></p>
+      <p>Wrong Answer: <strong>${wrongCount}</strong></p>
       <button class="next-btn" onclick="tryAgain()">Try Again</button>
     `;
   }

@@ -248,11 +248,11 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav align-items-center">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
+          <li class="nav-item"><a class="nav-link" href="firstquiz.html">Quiz</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
         <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="materiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Materi
+            Moduls
         </a>
         <ul class="dropdown-menu" aria-labelledby="materiDropdown">
             <li><a class="dropdown-item" href="satu.html">Common Daily Expressions</a></li>
@@ -275,29 +275,29 @@
       <h1 class="banner-title">
         ✨ Mini Conversations
       </h1>
-      <p class="banner-subtitle">ercakapan pendek untuk situasi sehari-hari — cepat, praktis, dan real-life banget!</p>
+      <p class="banner-subtitle">Short conversations for everyday situations - fast, practical, and very real-life!</p>
     </div>
   </div>
 </header>
 <section class="mini-convo-section">
   <p>
-    Mini conversations adalah percakapan pendek yang terjadi dalam kehidupan sehari-hari. Materi ini membantumu belajar bagaimana orang berbicara dalam konteks nyata, seperti saat memesan kopi, membeli barang, atau saat check-in di bandara.
+    Mini conversations are short conversations that occur in everyday life. This material helps you learn how people talk in real contexts, such as when ordering coffee, buying goods, or when checking in at the airport.
   </p>
   <p>
-    Dengan memahami ekspresi umum dan struktur kalimat yang sering digunakan, kamu akan lebih siap dan percaya diri saat berkomunikasi dalam bahasa Inggris.
+  By understanding common expressions and sentence structures that are often used, you will be more prepared and confident when communicating in English.
   </p>
 
   <div class="convo-table-container">
     <table class="convo-table">
       <thead>
         <tr>
-          <th>Skenario</th>
-          <th>Percakapan</th>
+          <th>Scenario</th>
+          <th>Conversation</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>☕ Di Kafe</td>
+          <td>☕ At the Cafe</td>
           <td>
             <strong>Customer:</strong> Hi, can I get a cappuccino, please?<br>
             <strong>Barista:</strong> Sure! Anything else?<br>
@@ -305,7 +305,7 @@
           </td>
         </tr>
         <tr>
-          <td>🛫 Di Bandara</td>
+          <td>🛫 At the Airport</td>
           <td>
             <strong>Staff:</strong> May I see your passport and boarding pass?<br>
             <strong>Passenger:</strong> Here you go.<br>
@@ -313,7 +313,7 @@
           </td>
         </tr>
         <tr>
-          <td>🛍️ Di Toko</td>
+          <td>🛍️ At the Store</td>
           <td>
             <strong>Clerk:</strong> Can I help you find something?<br>
             <strong>Customer:</strong> Yes, I’m looking for a black T-shirt.<br>
@@ -409,7 +409,7 @@ const quizData = [
     });
 
     if (i === q.correct) {
-      feedback.textContent = "🎉 Hebat! Anda benar!";
+      feedback.textContent = "🎉 Great! You're right!";
       correctCount++;
     } else {
       feedback.textContent = `Oops! ${q.explanation}`;
@@ -437,9 +437,9 @@ const quizData = [
   function showResult() {
     const quizDiv = document.getElementById("quiz");
     quizDiv.innerHTML = `
-      <h3>🎉 Quiz Selesai!</h3>
-      <p>Jawaban Benar: <strong>${correctCount}</strong></p>
-      <p>Jawaban Salah: <strong>${wrongCount}</strong></p>
+      <h3>🎉 Quiz Done!</h3>
+      <p>Correct Answer: <strong>${correctCount}</strong></p>
+      <p>Wrong Answer: <strong>${wrongCount}</strong></p>
       <button class="next-btn" onclick="tryAgain()">Try Again</button>
     `;
   }

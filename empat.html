@@ -266,11 +266,11 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav align-items-center">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
+          <li class="nav-item"><a class="nav-link" href="firstquiz.html">Quiz</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
         <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="materiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Materi
+            Moduls
         </a>
         <ul class="dropdown-menu" aria-labelledby="materiDropdown">
             <li><a class="dropdown-item" href="satu.html">Common Daily Expressions</a></li>
@@ -293,17 +293,16 @@
       <h1 class="banner-title">
         💬 Teen Slangs
       </h1>
-      <p class="banner-subtitle">Kata gaul yang sering kamu lihat di media sosial!</p>
+      <p class="banner-subtitle">Slang words you often see on social media!</p>
     </div>
   </div>
 </header>
 
 <section class="teen-slangs-section">
   <p>
-    Teen slangs adalah kata atau frasa gaul yang sering digunakan oleh remaja, khususnya di media sosial seperti TikTok, Instagram, atau Snapchat. Kata-kata ini biasanya punya arti yang berbeda dari makna literalnya dan bisa berubah seiring tren.
-  </p>
-  <p>
-    Slang ini mencerminkan budaya pop, emosi, atau reaksi secara singkat dan ekspresif. Meski tidak selalu digunakan dalam situasi formal, memahami slang penting agar kita gak ketinggalan zaman dan bisa memahami percakapan sehari-hari.
+    Teen slangs are slang words or phrases that are often used by teenagers, especially on social media such as TikTok, Instagram, or Snapchat. These words usually have a different meaning from their literal meaning and can change with trends. </p>
+<p>
+This slang reflects pop culture, emotions, or reactions in a short and expressive way. Although not always used in formal situations, understanding slang is important so that we don't get left behind and can understand everyday conversations.
   </p>
 
   <div class="slang-table-container">
@@ -311,49 +310,49 @@
       <thead>
         <tr>
           <th>Slang</th>
-          <th>Arti / Asal</th>
-          <th>Contoh Kalimat</th>
+          <th>Meaning / Origin</th>
+          <th>Example Sentences</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>No cap</td>
-          <td>Artinya "no lie" / "beneran"</td>
+          <td>It means "no lie" / "really"</td>
           <td>This movie is so good, no cap.</td>
         </tr>
         <tr>
           <td>Slay</td>
-          <td>Melakukan sesuatu dengan keren</td>
+          <td>Do something cool</td>
           <td>You slayed that outfit today!</td>
         </tr>
         <tr>
           <td>I’m dead</td>
-          <td>Ekspresi ketawa banget / lucu parah</td>
+          <td>Very funny / really laughing expression</td>
           <td>That meme was hilarious, I’m dead 😂</td>
         </tr>
         <tr>
           <td>Bet</td>
-          <td>Artinya "oke" atau "deal"</td>
+          <td>It means "okay" or "deal"</td>
           <td>You coming to the party? – Bet.</td>
         </tr>
         <tr>
           <td>Flex</td>
-          <td>Pamer berlebihan</td>
+          <td>Showing off too much</td>
           <td>He’s always flexing his new shoes.</td>
         </tr>
         <tr>
           <td>Sus</td>
-          <td>Singkatan dari suspicious (mencurigakan)</td>
+          <td>Abbreviation of suspicious</td>
           <td>Why did he leave so fast? That’s sus.</td>
         </tr>
         <tr>
           <td>Yeet</td>
-          <td>Melempar sesuatu dengan semangat</td>
+          <td>Throwing something with enthusiasm</td>
           <td>He just yeeted his phone across the room.</td>
         </tr>
         <tr>
           <td>Lit</td>
-          <td>Sesuatu yang seru atau keren</td>
+          <td>Something exciting or cool</td>
           <td>That concert was lit!</td>
         </tr>
         <tr>
@@ -368,9 +367,9 @@
   <div class="slang-week">
     <h3>⭐ Slang of the Week: <span class="highlight">Rizz</span></h3>
     <p>
-      <strong>Rizz</strong> adalah singkatan dari <em>charisma</em>. Digunakan untuk menggambarkan seseorang yang jago menarik perhatian orang lain, terutama dalam konteks flirting atau ngegombal.
+      <strong>Rizz</strong> is short for <em>charisma</em>. Used to describe someone who is good at attracting other people's attention, especially in the context of flirting or sweet-talking.
     </p>
-    <p><strong>Contoh:</strong></p>
+    <p><strong>Example:</strong></p>
     <ul>
       <li>"He’s got mad rizz – all the girls like him!"</li>
       <li>"No rizz detected. Try again, bro."</li>
@@ -456,7 +455,7 @@ const quizData = [
     });
 
     if (i === q.correct) {
-      feedback.textContent = "🎉 Hebat! Anda benar!";
+      feedback.textContent = "🎉 Great! You are right!";
       correctCount++;
     } else {
       feedback.textContent = `Oops! ${q.explanation}`;
@@ -474,7 +473,7 @@ const quizData = [
         loadQuestion();
       };
     } else {
-      nextBtn.textContent = "Lihat Hasil";
+      nextBtn.textContent = "View Results";
       nextBtn.onclick = showResult;
     }
     
@@ -484,9 +483,9 @@ const quizData = [
   function showResult() {
     const quizDiv = document.getElementById("quiz");
     quizDiv.innerHTML = `
-      <h3>🎉 Quiz Selesai!</h3>
-      <p>Jawaban Benar: <strong>${correctCount}</strong></p>
-      <p>Jawaban Salah: <strong>${wrongCount}</strong></p>
+      <h3>🎉 Quiz Done</h3>
+      <p>Correct Answer: <strong>${correctCount}</strong></p>
+      <p>Correct Wrong: <strong>${wrongCount}</strong></p>
       <button class="next-btn" onclick="tryAgain()">Try Again</button>
     `;
   }

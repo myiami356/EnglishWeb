@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartEng</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffd0d4;
+    }
+
+    .navbar {
+      background-color: #fdf4f4;
+      border-bottom: 3px solid #ffe3d5;
+    }
+
+    .navbar-brand {
+      font-weight:900;
+      font-size: 25px;
+      color: #ab51f5;
+    }
+
+    .navbar-brand span {
+      color: #ff3ea8;
+    }
+
+    .nav-link {
+      color: #444 !important;
+      font-size: 18px;
+      margin-right: 20px;
+      transition: color 0.3s;
+    }
+
+    .nav-link:hover {
+      color: #f57c51 !important;
+    }
+
+    
+.header-banner {
+  position: relative;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header-banner .overlay {
+  background: linear-gradient(to bottom, rgb(133, 0, 88), rgb(255, 92, 206));
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+
+.banner-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.banner-subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+#materi {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffb4ff;
+      margin: 0;
+      margin-top: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #d63384;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .question {
+      background-color: #ffffff;
+      padding: 15px 20px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .question p {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .question label {
+      display: block;
+      margin-bottom: 8px;
+      padding: 8px 10px;
+      background-color: #f9f9f9;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    .question label:hover {
+      background-color: #ffe0f0;
+    }
+
+    .correct {
+      background-color: #d4edda !important;
+      border-left: 5px solid #28a745;
+    }
+
+    .incorrect {
+      background-color: #f8d7da !important;
+      border-left: 5px solid #dc3545;
+    }
+
+    .explanation {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #555;
+      background-color: #f1f1f1;
+      padding: 10px;
+      border-radius: 6px;
+    }
+
+    button {
+      display: block;
+      margin: 30px auto;
+      padding: 12px 30px;
+      background-color: #d40059;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #d40059;
+    }
+
+    #resultBox {
+      max-width: 600px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    #resultBox h3 {
+      margin-top: 0;
+      font-size: 24px;
+    }
+
+    #resultBox p {
+      font-size: 16px;
+    }
+    .result p {
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+.result p:first-of-type {
+  font-size: 28px;
+  color: gold;
+  letter-spacing: 5px;
+}
+
+
+ .footer-simple {
+  background-color: #fff0e6;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+  color: #333;
+  border-top: 1px solid #ffd6c0;
+}
+
+.footer-simple .instagram-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-decoration: none;
+  color: #e1306c;
+  font-weight: 500;
+}
+
+.footer-simple .instagram-link:hover {
+  text-decoration: underline;
+}
+
+.instagram-icon {
+  width: 18px;
+  height: 18px;
+}
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#">Smart<span>Eng</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="firstquiz.html">Quiz</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="materiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Moduls
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="materiDropdown">
+            <li><a class="dropdown-item" href="satu.html">Common Daily Expressions</a></li>
+            <li><a class="dropdown-item" href="dua.html">Polite vs Casual</a></li>
+            <li><a class="dropdown-item" href="tiga.html">Idioms & Expressions</a></li>
+            <li><a class="dropdown-item" href="empat.html">Teen Slangs</a></li>
+            <li><a class="dropdown-item" href="lima.html">Grammar Tips</a></li>
+            <li><a class="dropdown-item" href="enam.html">Mini Conversations</a></li>
+        </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+<header class="header-banner">
+  <div class="overlay">
+    <div class="container text-center">
+      <h1 class="banner-title">
+        🧪 Quiz Time!
+      </h1>
+      <p class="banner-subtitle">Beginner Quiz: English Expressions</p>
+    </div>
+  </div>
+</header>
+
+<body>
+    <section id="materi"></section>
+  <form id="quizForm">
+    <!-- Soal akan dimasukkan oleh JS -->
+  </form>
+  <button onclick="confirmSubmit()">Selesai</button>
+
+  <div id="resultBox" style="display:none;"></div>
+
+  <script>
+    const questions = [
+      {
+        question: "What does 'What's up?' mean?",
+        options: ["What time is it?", "How are you?", "Where are you?", "Are you okay?"],
+        answer: 1,
+        explanation: "'What's up?' is a casual way to ask 'How are you?' or 'What's going on?'"
+      },
+      {
+        question: "Which is a polite way to ask for help?",
+        options: ["Help me!", "Can you help me, please?", "Do it now!", "You must help me."],
+        answer: 1,
+        explanation: "'Can you help me, please?' is polite and respectful."
+      },
+      {
+        question: "What does 'break a leg' mean in idioms?",
+        options: ["Be careful", "Good luck", "Don't fall", "Take care"],
+        answer: 1,
+        explanation: "'Break a leg' is an idiom that means 'Good luck', especially in performances."
+      },
+      {
+        question: "Which one is a teen slang for 'cool'?",
+        options: ["Lit", "Old", "Dry", "Tall"],
+        answer: 0,
+        explanation: "'Lit' is slang often used by teens to mean something is cool or awesome."
+      },
+      {
+        question: "Choose the grammatically correct sentence:",
+        options: ["He don't like coffee.", "He doesn't like coffee.", "He no like coffee.", "He didn't likes coffee."],
+        answer: 1,
+        explanation: "'He doesn't like coffee' is correct. The verb 'do' must agree with 'he'."
+      },
+      {
+        question: "What is the correct response to 'How are you?' in a mini conversation?",
+        options: ["I'm fine, thank you.", "You're welcome.", "Go ahead.", "I don't know."],
+        answer: 0,
+        explanation: "The proper response to 'How are you?' is 'I'm fine, thank you.'"
+      },
+      {
+        question: "Which one is casual expression?",
+        options: ["May I go now?", "Can I bounce?", "Would you excuse me?", "Do you mind if I leave?"],
+        answer: 1,
+        explanation: "'Can I bounce?' is a casual way to say you want to leave."
+      },
+      {
+        question: "What does 'hang out' mean?",
+        options: ["Stay together and relax", "Sleep early", "Clean the house", "Do homework"],
+        answer: 0,
+        explanation: "'Hang out' means to stay together and relax."
+      },
+      {
+        question: "Choose a polite way to ask someone to move:",
+        options: ["Move!", "Get out of the way!", "Could you please move a bit?", "You are blocking me."],
+        answer: 2,
+        explanation: "'Could you please move a bit?' is polite and respectful."
+      },
+      {
+        question: "Which one is NOT an idiom?",
+        options: ["Under the weather", "Piece of cake", "Run fast", "Spill the beans"],
+        answer: 2,
+        explanation: "'Run fast' is literal, not an idiom. The others are idiomatic expressions."
+      }
+    ];
+
+    const quizForm = document.getElementById("quizForm");
+
+    questions.forEach((q, index) => {
+      const div = document.createElement("div");
+      div.className = "question";
+      div.id = "q" + index;
+      div.innerHTML = `<p><strong>${index + 1}. ${q.question}</strong></p>` +
+        q.options.map((opt, i) => `
+          <label><input type="radio" name="q${index}" value="${i}" /> ${opt}</label>
+        `).join("");
+      quizForm.appendChild(div);
+    });
+
+    function confirmSubmit() {
+      if (confirm("Are you sure about your answer?")) {
+        checkAnswers();
+      }
+    }
+
+function checkAnswers() {
+  let score = 0;
+  questions.forEach((q, i) => {
+    const selected = document.querySelector(`input[name='q${i}']:checked`);
+    const qDiv = document.getElementById("q" + i);
+    const labels = qDiv.querySelectorAll("label");
+
+    labels.forEach((label, idx) => {
+      label.classList.remove("correct", "incorrect");
+      if (idx === q.answer) label.classList.add("correct");
+      else if (selected && parseInt(selected.value) === idx) label.classList.add("incorrect");
+    });
+
+    if (selected && parseInt(selected.value) === q.answer) {
+      score++;
+    } else {
+      const explanation = document.createElement("div");
+      explanation.className = "explanation";
+      explanation.innerText = `Explanation: ${q.explanation}`;
+      qDiv.appendChild(explanation);
+    }
+  });
+
+  const resultBox = document.getElementById("resultBox");
+  resultBox.style.display = "block";
+  resultBox.innerHTML = `<h3>Your results: ${score}/10</h3>`;
+
+  if (score === 10) {
+    resultBox.innerHTML += `
+      <p>🌟🌟🌟🌟🌟</p>
+      <p>🎉 Excellent! Your answer is perfect. You're really great!</p>
+    `;
+  } else {
+    resultBox.innerHTML += `
+      <p>😢 Unfortunately, your answer is not perfect. Keep up the good work!</p>
+      <button onclick="location.reload()">Try Again</button>
+    `;
+  }
+}
+  </script>
+  </section>
+
+<footer class="footer-simple">
+  <div class="container text-center">
+    <p class="mb-1">© 2025 Najmi Khairurizqa. All rights reserved.</p>
+    <a href="https://www.instagram.com/najmii.khq/" target="_blank" class="instagram-link">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="instagram-icon">
+      @najmii.khq
+    </a>
+    <p class="mb-1">TRPL 2C | Politeknik Negeri Medan</p>
+  </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
