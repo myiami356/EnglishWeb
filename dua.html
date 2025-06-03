@@ -414,7 +414,7 @@ const quizData = [
         loadQuestion();
       };
     } else {
-      nextBtn.textContent = "Lihat Hasil";
+      nextBtn.textContent = "View Results";
       nextBtn.onclick = showResult;
     }
     
@@ -424,9 +424,9 @@ const quizData = [
   function showResult() {
     const quizDiv = document.getElementById("quiz");
     quizDiv.innerHTML = `
-      <h3>🎉 Quiz Selesai!</h3>
-      <p>Jawaban Benar: <strong>${correctCount}</strong></p>
-      <p>Jawaban Salah: <strong>${wrongCount}</strong></p>
+      <h3>🎉 Quiz Done</h3>
+      <p>Correct Answer: <strong>${correctCount}</strong></p>
+      <p>Correct Wrong: <strong>${wrongCount}</strong></p>
       <button class="next-btn" onclick="tryAgain()">Try Again</button>
     `;
   }

@@ -383,7 +383,7 @@
         loadQuestion();
       };
     } else {
-      nextBtn.textContent = "Lihat Hasil";
+      nextBtn.textContent = "View Results";
       nextBtn.onclick = showResult;
     }
     
@@ -394,8 +394,8 @@
     const quizDiv = document.getElementById("quiz");
     quizDiv.innerHTML = `
       <h3>🎉 Quiz Selesai!</h3>
-      <p>Jawaban Benar: <strong>${correctCount}</strong></p>
-      <p>Jawaban Salah: <strong>${wrongCount}</strong></p>
+      <p>Correct Answer: <strong>${correctCount}</strong></p>
+      <p>Wrong Answer: <strong>${wrongCount}</strong></p>
       <button class="next-btn" onclick="tryAgain()">Try Again</button>
     `;
   }
